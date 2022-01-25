@@ -16,5 +16,5 @@
 
 
 ##  FUNCTIONS IN DEPTH
-- A function has parameters
+- A function has parameters(variables)
 - When you invoke a function you'll send argumentssssss
