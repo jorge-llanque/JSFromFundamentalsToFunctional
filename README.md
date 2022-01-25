@@ -9,3 +9,12 @@
 ## Destructuring array
 - const [target] = [the source]
 - const {target} = {the source}
+
+## Loops
+- Arrays work well with for loops because we have the numerical indices.
+- Objects work better with for in loop because we say key in obj, that one.
+
+
+##  FUNCTIONS IN DEPTH
+- A function has parameters
+- When you invoke a function you'll send argumentssssss
