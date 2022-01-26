@@ -28,3 +28,13 @@
 - _.each doesn't return anything.
 - _.filter return based on that truthy test that we pass it.
 - _.reduce always return one function.
+
+## FUNCTIONAL UTILITIES
+- Currying and Composing
+- Currying is when you create a function that can later be called multiple times with different arguments.
+- Composing is when you take two functions and combine them essenntially.
+
+## Closures
+- It's when a function is inside of a function that creates.
+- Scope isolation.
+- A closure happens when you put two function inside of a function and you could take advantage of that by returning a function that retains access to it's parent function even after it has been executed (Bianca Trainner)

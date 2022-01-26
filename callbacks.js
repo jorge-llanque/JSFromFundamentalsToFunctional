@@ -57,3 +57,15 @@ const notInRoom = suspect => {
 
 notInRoom = _.map(newDevelopment, notInRoom)
 _.intersection(...notInRooms)
+
+//Exercises
+const calculateCurrentClimateInCelsius = function(country, date, cb){
+    let codeCountry = country === "Bolivia" ? "Bol" : "USD";
+    return cb(codeCountry, date);
+}
+
+const result = calculateCurrentClimateInCelsius("Bolivia", "20/10/2022", function(codeC, date){
+    return 23
+});
+
+console.log(result, "JE");
