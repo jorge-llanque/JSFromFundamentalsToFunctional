@@ -82,3 +82,15 @@ var names = users.map(({user: fuckname}) => fuckname);
 // OR users.map(({user}) => user);
 console.log(names);
 
+
+
+/* EXERCISES */
+const {me, she, c} = {
+    me: 201,
+    she: 102,
+    c: function(a, b){
+        return a.toString().split('').reverse().join('') === b.toString() ? "Palindrome!!!!!" : "nope";
+    }
+}
+console.log(she)
+console.log(c(me, she));

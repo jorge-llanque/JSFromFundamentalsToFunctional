@@ -1,5 +1,4 @@
-// High Order Functions
-
+/*High Order Functions*/
 // Callbacks
 const ifElse = (condition, isTrue, isFalse) => {
     return condition ? isTrue() : isFalse();
@@ -58,7 +57,9 @@ const notInRoom = suspect => {
 notInRoom = _.map(newDevelopment, notInRoom)
 _.intersection(...notInRooms)
 
-//Exercises
+
+
+/*  Exercises  */
 const calculateCurrentClimateInCelsius = function(country, date, cb){
     let codeCountry = country === "Bolivia" ? "Bol" : "USD";
     return cb(codeCountry, date);
@@ -69,3 +70,38 @@ const result = calculateCurrentClimateInCelsius("Bolivia", "20/10/2022", functio
 });
 
 console.log(result, "JE");
+
+const estadoDeHumor = (genero, actividadDiaria, cb) => {
+    var gen = 0;
+    if(genero === "hombre"){
+        gen = 9;
+    }else {
+        gen = 5;
+    }
+
+    const act = actividadDiaria === "trabajo" ? 4 : 9;
+    return cb(gen, act, 0);
+};
+
+const resp = estadoDeHumor("hombre", "trabajo", function(a, b, c){
+    return a + b + c;
+});
+console.log(resp);
+
+
+const a = [1,2,3,4].reduce((prev, curr) => {return prev + curr},0);
+console.log(a);
+
+
+// add only numbers finished at zero
+const b = [10, 3, 50, 0].reduce((prev, curr)=> {
+    if(curr.toString().slice(-1) === '0'){
+        return parseInt(curr) + prev
+    }else{
+        return prev
+    }
+}, 0);
+console.log(b);
+
+// sort asc
+// ... pending

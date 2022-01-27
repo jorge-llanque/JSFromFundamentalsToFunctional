@@ -20,8 +20,7 @@
 - When you invoke a function you'll send argumentssssss
 
 ## High Order Functions
-- Takes a function as an input (arguments)
-- Returns a function as the output.
+- Takes a function as an input (arguments) and returns a function as the output.
 
 ## IMPORTANT
 - _.map always return an array with the same length.
